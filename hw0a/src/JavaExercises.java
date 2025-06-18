@@ -12,6 +12,17 @@ public class JavaExercises {
      * The first row contains 1 star, the second 2 stars, and so on.
      */
     public static void starTriangle() {
+        int i;
+        for (i=1;i<=5;i++){
+            for (int j=1;j<=5-i;j++){
+                System.out.println(' ');
+            }
+            for (int j=1;j<=i;j++){
+                System.out.println('*');
+            }
+
+        }
+
         // TODO: Fill in this function
     }
 
@@ -20,6 +31,7 @@ public class JavaExercises {
      * Example: printIndexed("hello") -> h4e3l2l1o0
      */
     public static void printIndexed(String s) {
+
         // TODO: Fill in this function
     }
 
