@@ -31,6 +31,13 @@ public class JavaExercises {
      * Example: printIndexed("hello") -> h4e3l2l1o0
      */
     public static void printIndexed(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            int reverseIndex = s.length() - 1 - i;
+            sb.append(c).append(reverseIndex);
+        }
+        System.out.println(sb.toString());
 
         // TODO: Fill in this function
     }
