@@ -47,8 +47,14 @@ public class JavaExercises {
      * Example: stutter("hello") -> "hheelllloo"
      */
     public static String stutter(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            sb.append(c).append(c);
+        }
+
         // TODO: Fill in this function
-        return null;
+        return sb.toString();
     }
 
     /**
@@ -61,8 +67,18 @@ public class JavaExercises {
      *   0 if the point lies on an axis.
      */
     public static int quadrant(int x, int y) {
+        if (x>0 && y>0){
+            return 1;
+        } else if (x<0 && y>0) {
+            return 2;
+        } else if (x<0 && y<0) {
+            return 3;
+        } else if (x>0 && y<0) {
+            return 4;
+        } else {
+            return 0;
+        }
         // TODO: Fill in this function
-        return 0;
     }
 
     public static void main(String[] args) {
